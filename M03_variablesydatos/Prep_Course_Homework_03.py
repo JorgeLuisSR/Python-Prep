@@ -7,14 +7,15 @@
 
 # In[7]:
 
-
+x = 1
+print(x)
 
 
 # 2) Imprimir el tipo de dato de la constante 8.5
 
 # In[3]:
 
-
+print(type(8.5))
 
 
 
@@ -22,7 +23,7 @@
 
 # In[8]:
 
-
+print(type(x))
 
 
 
@@ -30,14 +31,14 @@
 
 # In[2]:
 
-
+nombre = "Jorge"
 
 
 # 5) Crear una variable que contenga un número complejo
 
 # In[3]:
 
-
+n_c = x+2j
 
 
 
@@ -46,7 +47,7 @@
 # In[4]:
 
 
-
+print(type(n_c))
 
 
 # 7) Crear una variable que contenga el valor del número Pi redondeado a 4 decimales
@@ -61,7 +62,8 @@ pi = 3.1416
 
 # In[3]:
 
-
+t="True"
+tt=True
 
 
 
@@ -69,7 +71,8 @@ pi = 3.1416
 
 # In[5]:
 
-
+print(type(t))
+print(type(tt))
 
 
 
@@ -77,7 +80,7 @@ pi = 3.1416
 
 # In[1]:
 
-
+sum = 3 + 8.3
 
 
 
@@ -85,14 +88,14 @@ pi = 3.1416
 
 # In[2]:
 
-
-
+ca = 2 +2j;cb = 4 - 1j
+sumc = ca+cb
 
 
 # 12) Realizar una operación de suma de un número real y otro complejo
 
 # In[4]:
-
+sumcr = ca + 4.6
 
 
 
@@ -102,37 +105,38 @@ pi = 3.1416
 # In[5]:
 
 
-
+2*2
 
 
 # 14) Mostrar el resultado de elevar 2 a la octava potencia
 
 # In[6]:
 
-
+2**8
 
 
 # 15) Obtener el cociente de la división de 27 entre 4 en una variable y luego mostrarla
 
 # In[8]:
 
-
-
+x = 27/4
+print(x)
 
 
 # 16) De la división anterior solamente mostrar la parte entera
 
 # In[9]:
 
-
+y = 27//4
+print (y)
 
 
 
 # 17) De la división de 27 entre 4 mostrar solamente el resto
 
 # In[1]:
-
-
+z = 27%4
+print(z)
 
 
 
@@ -141,13 +145,15 @@ pi = 3.1416
 # In[2]:
 
 
-
+print((4*y)+ z)
 
 
 # 19) Utilizar el operador "+" en una operación donde intervengan solo variables alfanuméricas
 
 # In[3]:
-
+a = "alfa"
+b = "beto"
+print(a+b)
 
 
 
@@ -156,7 +162,7 @@ pi = 3.1416
 
 # In[4]:
 
-
+print("2"==2)
 
 
 
@@ -164,7 +170,7 @@ pi = 3.1416
 
 # In[11]:
 
-
+print(int("2")==2)
 
 
 
@@ -172,7 +178,7 @@ pi = 3.1416
 
 # In[12]:
 
-
+#"3,8" usa el simbolo ',' para separar la parte decimal de la parte entera del numero representado, mientras que en el ingles estandar se utiliza el simbolo '.'
 
 
 
@@ -180,14 +186,19 @@ pi = 3.1416
 
 # In[15]:
 
-
+x= 3
+x-=1
 
 
 
 # 24) Realizar la operacion 1 << 2 ¿Por qué da ese resultado? ¿Qué es el sistema de numeración binario?
 
 # In[29]:
+print(1<<2)
 
+# El resultado aparece tras mover 2 bits "a la izquierda" del numero binario que representa el valor 1, es decir, pasar de 001 a 100
+# El sistema de numeración binaria o binario es aquel que representa la cantidades numericas como un conjunto de valores de 2 estados, es decir que cada unidad representa uno de dos estados posibles
+#   su combinación permite la representación de valores majores gracias al sistema de peso o valor según la posición del digito con repecto al numero completo, otra forma de calcularlo es representado cada unidad como en representación de una potencia de dos correspondiente a su posición
 
 
 
@@ -195,8 +206,10 @@ pi = 3.1416
 # 25) Realizar la operación 2 + '2' ¿Por qué no está permitido? ¿Si los dos operandos serían del mismo tipo, siempre arrojaría el mismo resultado?
 
 # In[23]:
+print(2+"2")
 
-
+# En Python a diferencia de otros lenguajes de programación, como javascript, el tipo de dato en cuestion determina si las operaciones aplicadas daran un resultado esperado o no, Python no permite las operaciones entre tipos de datos como texto y tipos numericos
+# Por este motivo el convertir los valores al mismo tipo de dato (númerico o de cadena de texto) lograria resolver el error, concatenando a "22" o sumando 4
 
 
 
@@ -205,5 +218,6 @@ pi = 3.1416
 
 # In[30]:
 
-
+print(str(2) + "2")
+print(2+int("2"))
 
