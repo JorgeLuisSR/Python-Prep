@@ -213,7 +213,6 @@ print(2+"2")
 
 
 
-
 # 26) Realizar una operación válida entre valores de tipo entero y string
 
 # In[30]:
