@@ -11,7 +11,8 @@ from random import Random
 li = [Random().choice(range(1,21)) for x in range(20)]
 print(li)
 def isPrime(n):
-    if (n%2==0): return False
+    if (n==2 or n==3): return True
+    if (n%2==0 or n==0 or n==1): return False
     if sum([int(x) for x in str(n)])%3==0: return False
     return True
 
