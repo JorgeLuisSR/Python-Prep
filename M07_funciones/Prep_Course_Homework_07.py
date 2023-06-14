@@ -9,11 +9,11 @@
 from random import Random
 
 li = [Random().choice(range(1,21)) for x in range(20)]
-
+print(li)
 def isPrime(n):
-    if (n%2==0): return True
-    if sum([int(x) for x in str(n)])%3==0: return True
-    return False
+    if (n%2==0): return False
+    if sum([int(x) for x in str(n)])%3==0: return False
+    return True
 
 print(str(li[0])+ " es primo? " + str(isPrime(li[0])))
 # 2) Utilizando la función del punto 1, realizar otra función que reciba de parámetro una lista de números y devuelva sólo aquellos que son primos en otra lista
@@ -35,17 +35,21 @@ def mostRepeated(n, isMax=False):
     '''
     re=list(n).copy()
     counter = 0
-    ans = list().append(re[0])
+    ans = list()
+    ans.append(re[0])
     for x in re:
+        print(ans, counter)
         if re.count(x)>counter:
             ans = [x]
             counter = re.count(x)
         elif re.count(x) == counter and not x in ans:
             ans.append(x)
-        if bool(isMax):
-            return max(ans)
-        else:
-            return min(ans)
+    if bool(isMax):
+        return max(ans)
+    else:
+        return min(ans)
+    
+    
         
 print(mostRepeated(li))
 # 4) A la función del punto 3, agregar un parámetro más, que permita elegir si se requiere el menor o el mayor de los mas repetidos.
