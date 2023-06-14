@@ -38,7 +38,6 @@ def mostRepeated(n, isMax=False):
     ans = list()
     ans.append(re[0])
     for x in re:
-        print(ans, counter)
         if re.count(x)>counter:
             ans = [x]
             counter = re.count(x)
